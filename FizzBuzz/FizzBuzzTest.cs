@@ -22,4 +22,15 @@ public class FizzBuzzTest
         
         Assert.Equal("Fizz", actualNumber);
     }
+    
+    
+    [Fact]
+    public void should_return_Buzz_when_play_game_given_number_is_5()
+    {
+        int givenNumber = 5;
+        
+        string actualNumber = new FizzBuzz().PlayGame(givenNumber);
+        
+        Assert.Equal("Buzz", actualNumber);
+    }
 }
