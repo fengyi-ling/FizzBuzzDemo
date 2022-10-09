@@ -33,4 +33,14 @@ public class FizzBuzzTest
         
         Assert.Equal("Buzz", actualNumber);
     }
+    
+    [Fact]
+    public void should_return_FizzBuzz_when_play_game_given_number_is_15()
+    {
+        int givenNumber = 15;
+        
+        string actualNumber = new FizzBuzz().PlayGame(givenNumber);
+        
+        Assert.Equal("FizzBuzz", actualNumber);
+    }
 }

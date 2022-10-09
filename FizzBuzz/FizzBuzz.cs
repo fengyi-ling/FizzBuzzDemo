@@ -5,6 +5,12 @@ public class FizzBuzz
     public string PlayGame(int givenNumber)
     {
         
+        if(givenNumber % 15 == 0)
+        {
+            return "FizzBuzz";
+        }
+        
+        
         if(givenNumber % 5 == 0)
         {
             return "Buzz";
