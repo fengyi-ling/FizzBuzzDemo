@@ -1,5 +1,4 @@
-namespace FizzBuzz;
-
+using Xunit;
 public class FizzBuzzTest
 {
     [Fact]
