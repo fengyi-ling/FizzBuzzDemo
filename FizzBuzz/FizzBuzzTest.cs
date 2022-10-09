@@ -12,4 +12,14 @@ public class FizzBuzzTest
         
         Assert.Equal("1", actualNumber);
     }
+    
+    [Fact]
+    public void should_return_Fizz_when_play_game_given_number_is_3()
+    {
+        int givenNumber = 3;
+        
+        string actualNumber = new FizzBuzz().PlayGame(givenNumber);
+        
+        Assert.Equal("Fizz", actualNumber);
+    }
 }

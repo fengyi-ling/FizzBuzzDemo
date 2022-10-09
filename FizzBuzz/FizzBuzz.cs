@@ -1,10 +1,14 @@
-namespace  FizzBuzz;
+namespace FizzBuzz;
 
 public class FizzBuzz
 {
     public string PlayGame(int givenNumber)
     {
+        if (givenNumber % 3 == 0)
+        {
+            return "Fizz";
+        }
+
         return givenNumber.ToString();
     }
-        
 }
